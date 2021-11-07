@@ -76,5 +76,6 @@ while(kc != 0x1b){
 
 }
 /*returing back to text mode*/
-set_mode(TEXT_MODE);
+if(VIDEO_INT != TEXT_MODE){
+set_mode(TEXT_MODE);}
 return 0;}
